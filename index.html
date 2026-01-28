@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mycel | See Yourself. Shoot Better.</title>
+    <meta name="description"
+        content="Mycel is a screen-integrated power bank for solo smartphone content creators. Connects via cable to mirror the phone’s rear camera output.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Mycel</a>
+            <div class="nav-links">
+                <a href="#product" class="nav-link">Product</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#design" class="nav-link">Design</a>
+                <a href="#use-cases" class="nav-link">Use Cases</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="product">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <h1><span class="brand-purple">See Yourself.</span><br>Shoot Better.</h1>
+                <p>The first screen-integrated power bank designed for creators. Mirror your rear camera, frame your
+                    shot, and never run out of charge.</p>
+                <div class="hero-actions">
+                    <a href="#preorder" class="cta-button">Pre-order Now</a>
+                </div>
+            </div>
+            <div class="hero-image-container fade-in-up">
+                <img src="assets/product_hero.png" alt="Mycel Device" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section-padding problem-section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>The Solo Creator's Dilemma</h2>
+                <p>Smartphone content creation shouldn't be a guessing game.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card fade-in-up">
+                    <div class="card-bg">
+                        <img src="assets/problem_sarah.png" alt="Sarah filming herself">
+                    </div>
+                    <p class="problem-quote">“This product lets creators frame themselves perfectly while shooting with
+                        the 4K rear camera.”</p>
+                    <div class="creator-info">
+                        <span class="creator-name">— Sarah</span>
+                        <span class="creator-role">Travel Vlogger</span>
+                    </div>
+                </div>
+                <div class="problem-card fade-in-up">
+                    <div class="card-bg">
+                        <img src="assets/problem_marcus.jpg" alt="Integrated power setup">
+                    </div>
+                    <p class="problem-quote">“Eliminates the need for external power banks and cables by integrating
+                        power directly into the filming setup.”</p>
+                    <div class="creator-info">
+                        <span class="creator-name">— Marcus</span>
+                        <span class="creator-role">Lifestyle Creator</span>
+                    </div>
+                </div>
+                <div class="problem-card fade-in-up">
+                    <div class="card-bg">
+                        <img src="assets/problem_elena.jpg" alt="Mycel device with script">
+                    </div>
+                    <p class="problem-quote">“Creators can follow their script while staying visually connected to their
+                        audience.”</p>
+                    <div class="creator-info">
+                        <span class="creator-name">— Elena</span>
+                        <span class="creator-role">Tech Reviewer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section-padding solution-section">
+        <div class="container solution-container">
+            <div class="solution-image fade-in-up">
+                <!-- Using a gradient placeholder since image generation failed -->
+                <img src="assets/all_in_one_exploded.png" alt="Mycel Technical Exploded View">
+            </div>
+            <div class="solution-content fade-in-up">
+                <h2 class="text-gradient">The <span class="brand-purple">All-in-One</span> Solution</h2>
+                <p>Mycel magnetically snaps to your phone, giving you a dedicated rear screen for framing, preset
+                    guides, and teleprompter notes—all while keeping your phone charged.</p>
+                <ul class="feature-list">
+                    <li><span class="check-icon">✓</span> 4K Rear Camera Preview</li>
+                    <li><span class="check-icon">✓</span> MagSafe & Universal Mount Compatible</li>
+                    <li><span class="check-icon">✓</span> 5000mAh Extended Battery Life</li>
+                    <li><span class="check-icon">✓</span> Professional Composition Grids</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding features-grid-section" id="features">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Packed with Power</h2>
+                <p>Everything you need to create professional content on the go.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up feature-reveal-card">
+                    <div class="card-bg">
+                        <img src="assets/feature_live_preview.jpg" alt="Live Preview demo">
+                    </div>
+                    <div class="feature-content-wrapper">
+                        <div class="feature-icon-wrapper">👁️</div>
+                        <h3>Live Preview</h3>
+                        <p>Real-time mirroring of your phone's rear camera with zero latency.</p>
+                    </div>
+                </div>
+                <div class="feature-card fade-in-up feature-reveal-card">
+                    <div class="card-bg">
+                        <img src="assets/feature_framing.png" alt="Framing Presets demo" class="active">
+                        <img src="assets/feature_framing_2.png" alt="Framing Presets demo 2">
+                        <button class="slider-arrow" onclick="toggleFeatureImage(event)">→</button>
+                    </div>
+                    <div class="feature-content-wrapper">
+                        <div class="feature-icon-wrapper">📐</div>
+                        <h3>Framing Presets</h3>
+                        <p>Built-in Rule of Thirds, Golden Ratio, and Grid overlays for perfect composition.</p>
+                    </div>
+                </div>
+                <div class="feature-card fade-in-up feature-reveal-card">
+                    <div class="card-bg">
+                        <img src="assets/feature_teleprompter.jpg" alt="Teleprompter demo">
+                    </div>
+                    <div class="feature-content-wrapper">
+                        <div class="feature-icon-wrapper">📜</div>
+                        <h3>Teleprompter</h3>
+                        <p>Sync with your notes app to scroll scripts directly on the Mycel screen.</p>
+                    </div>
+                </div>
+                <div class="feature-card fade-in-up feature-reveal-card">
+                    <div class="card-bg">
+                        <img src="assets/feature_rgb.png" alt="RGB Lighting demo" class="active">
+                        <img src="assets/feature_rgb_2.png" alt="RGB Lighting demo 2">
+                        <img src="assets/feature_rgb_3.png" alt="RGB Lighting demo 3">
+                        <button class="slider-arrow" onclick="toggleFeatureImage(event)">→</button>
+                    </div>
+                    <div class="feature-content-wrapper">
+                        <div class="feature-icon-wrapper">💡</div>
+                        <h3>RGB Lighting</h3>
+                        <p>Turn the screen into a soft fill light with customizable colors and brightness.</p>
+                    </div>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon-wrapper">⚡</div>
+                    <h3>Passthrough Charging</h3>
+                    <p>Keep your phone at 100% while recording for hours.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon-wrapper">🌬️</div>
+                    <h3>Cooling Design</h3>
+                    <p>Semi-transparent silicone body designed for heat dissipation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design to Disappear Section (Strict Minimalist Layout) -->
+    <section class="workflow-section">
+        <div class="workflow-container">
+            <div class="workflow-hero fade-in-up">
+                <h2>Design to Disappear in your work flow</h2>
+            </div>
+
+            <!-- Feature 1: Universal Charging -->
+            <div class="workflow-item fade-in-up">
+                <div class="text-content">
+                    <h3>Most universal charging</h3>
+                    <p>As most of the device is C type now a days, this device is also have C type charging to be
+                        compatible with most of the devices.</p>
+                </div>
+                <div class="image-content">
+                    <img src="assets/workflow_charging.png" alt="Universal charging detail">
+                </div>
+            </div>
+
+            <!-- Feature 2: Compression Support -->
+            <div class="workflow-item reverse fade-in-up">
+                <div class="image-content">
+                    <img src="assets/workflow_compression.png" alt="Compression support detail">
+                </div>
+                <div class="text-content">
+                    <p>Compression support for the maximum compatibility with all type of smartphone.</p>
+                </div>
+            </div>
+
+            <!-- Tripod Strip Section -->
+            <div class="tripod-strip fade-in-up">
+                <img src="assets/workflow_tripod_v2.png" alt="Tripod compatibility lineup">
+            </div>
+
+            <div class="tripod-info fade-in-up">
+                <h3>Tripod Compatible</h3>
+                <p>MYC - 1 is a compact phone - mounted visual feedback device that lets you see your framing in real
+                    time while recording with the rear camera</p>
+            </div>
+
+            <!-- Feature 3: 180 Degree Stand -->
+            <div class="workflow-item fade-in-up">
+                <div class="text-content">
+                    <p>180 degree stand for both side support and maximum usability</p>
+                </div>
+                <div class="image-content">
+                    <img src="assets/workflow_stand_v2.png" alt="180 degree stand detail">
+                </div>
+            </div>
+
+            <!-- Feature 4: Silicon Finish -->
+            <div class="workflow-item reverse fade-in-up">
+                <div class="image-content">
+                    <img src="assets/workflow_finish_v2.png" alt="Silicon finish detail">
+                </div>
+                <div class="text-content">
+                    <p>Silicon like finish for less scratch ability and it will prevent it from heating.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Colors Section -->
+    <section class="section-padding colors-section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Choose Your Aesthetic</h2>
+                <p>Designed to complement your style and your device.</p>
+            </div>
+            <div class="colors-grid">
+                <div class="color-card fade-in-up">
+                    <div class="color-image-wrapper">
+                        <img src="assets/color_blue.png" alt="Mycel Ocean Blue variant">
+                    </div>
+                    <div class="color-info">
+                        <h3>Ocean Blue</h3>
+                        <p>Deep, professional, and timeless.</p>
+                    </div>
+                </div>
+                <div class="color-card fade-in-up">
+                    <div class="color-image-wrapper">
+                        <img src="assets/color_mint.png" alt="Mycel Mint Green variant">
+                    </div>
+                    <div class="color-info">
+                        <h3>Mint Green</h3>
+                        <p>Fresh, vibrant, and expressive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="section-padding use-cases" id="use-cases">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Create Anywhere</h2>
+            </div>
+            <div class="use-case-slider">
+                <!-- Using placeholder gradients/icons since image generation failed -->
+                <div class="use-case-card fade-in-up">
+                    <img src="assets/travel_vlogging.png" alt="Travel Vlogging">
+                    <div class="use-case-info">
+                        <h3>Travel Vlogging</h3>
+                        <p>Capture the world and yourself in 4K.</p>
+                    </div>
+                </div>
+                <div class="use-case-card fade-in-up">
+                    <img src="assets/urban_lifestyle.png" alt="Urban Lifestyle">
+                    <div class="use-case-info">
+                        <h3>Urban Lifestyle</h3>
+                        <p>Seamlessly document your day-to-day.</p>
+                    </div>
+                </div>
+                <div class="use-case-card fade-in-up">
+                    <img src="assets/educational_v2.png" alt="Educational Content">
+                    <div class="use-case-info">
+                        <h3>Educational</h3>
+                        <p>Deliver scripts perfectly with the teleprompter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="buy-section" id="preorder">
+        <div class="buy-glow"></div>
+        <div class="container buy-content">
+            <h2 class="fade-in-up">Ready to <span class="brand-purple">Elevate</span> Your Content?</h2>
+            <p class="fade-in-up">Join thousands of creators who have simplified their workflow with Mycel. Pre-order
+                now and get exclusive early-access features.</p>
+            <div class="buy-cta-container fade-in-up">
+                <a href="#" class="cta-button">Buy Now — $219</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Mycel</h2>
+                    <p style="color: var(--text-secondary);">The ultimate tool for mobile creators.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-col">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Specs</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-col">
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                &copy; 2026 Mycel. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="custom-cursor"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
